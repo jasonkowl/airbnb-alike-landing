@@ -3,15 +3,18 @@ import "./Banner.css";
 import Search from './Search';
 import { Button } from "@material-ui/core";
 
+
 function Banner() {
     const [showSearch, setShowSearch] = useState(false);
 
   return (
     <div className="banner">
         <div className="banner__search">
-            {showSearch && <h1><Search /></h1>}
+            {showSearch && <Search />}
             <Button onClick={() => setShowSearch(!showSearch)}
-            variant='outlined' className='banner__searchButton'>Search Dates</Button>
+            className='banner__searchButton' variant='outlined'>
+              {showSearch ? "Hide" : "Search Dates" }
+              </Button>
         </div>
       <div className="banner__info">
           <h1>Get out and stretch your imagination</h1>
