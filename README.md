@@ -1,4 +1,4 @@
-## Boookit - Airbnb Inspired App
+## Boookit - Airbnb Inspired Landing and Search Page app
  
  
-Build with Reactjs + Material UI + Firebase
+Built with Reactjs + Material UI + Firebase
